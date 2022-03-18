@@ -1,0 +1,410 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 100px;
+}
+
+.bg-barra {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 272px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+
+    padding-right: 1.5rem;
+}
+
+.barra-pesquisa {
+    display: none;
+    width: 272px;
+    background-color: #F5F5F5;
+
+    padding-left: 1rem;
+
+    border: none;
+    outline: none;
+
+    font-family: var(--raleway);
+    color: var(--preto-50);
+}
+
+.login {
+       color: var(--azul-100);
+       padding-right: 50px;
+       padding-left: 50px;
+}
+
+.login:hover {
+    background: var(--azul-20);
+}
+
+.lupa {
+    width: 1.2rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    background-image: url("banner.png");
+    background-color: #014217;
+    background-size: cover;
+}
+
+.banner-conteudo {
+    margin-bottom: 2rem;
+}
+
+.banner-titulo h1 {
+    font-weight: 700;
+    font-size: 22px ;
+    color: var(--branco);
+    margin-bottom: 0.9rem;
+}
+
+.banner-subtitulo {
+    font-weight: 600;
+    color: var(--branco);
+    font-size: 0.8rem;
+    margin-bottom: 2em;
+}
+
+.banner-link {
+    color: var(--branco);
+    background: var(--azul-100);
+    width: 90px;
+    text-decoration: none;
+}
+
+.banner-link:hover {
+    background: var(--azul-80);
+}
+
+.produtos-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.3rem 0 1rem;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.produtos-cabecalho h2 {
+    color: var(--preto-100);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.produto-cadastrado {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.produto-cadastradoE { 
+    display: none;
+}
+
+.produto-descricao {
+    margin-top: 0.5em;
+}
+
+.produto-preco {
+    margin-top: 0.5em;
+}
+
+.produto-link {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--azul-10);
+}
+
+.menu-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.logo-rodape {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.menu-rodape li {
+    margin-bottom: 1rem;
+}
+
+.menu-rodape a{
+    color: var(--preto-100);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formulario legend {
+    font-weight: 700;
+    color: var(--preto-100);
+    font-size: 16px;
+
+    margin-bottom: 0.5em;
+}
+
+.formulario label {
+    display: block;
+    width: 100%;
+
+    padding: 10px 10px 0 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    font-family: var(--raleway);
+    font-size: 12px;
+    color: #A2A2A2;
+
+    background-color: white;
+}
+
+.formulario .fundo-branco {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+
+    box-shadow: 0px 1px 2px #C8C8C8;
+
+    margin-bottom: 1em;
+}
+
+.formulario .nome {
+    width: 92%;
+    border: none;
+    border-radius: 4px;
+
+    margin: 5px 10px;
+    
+    font-size: 16px;
+    color: var(--preto-100);
+    line-height: 20px;
+
+    outline: none;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 82px;
+
+    box-shadow: 0px 1px 2px #C8C8C8;
+    border-radius: 4px;
+    border: none;
+    
+    padding: 20px 10px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+
+    font-family: var(--raleway);
+    font-size: 1em;
+    color: #A2A2A2;
+
+    resize: none;
+    outline: none;
+}
+
+.formulario .formulario-botao {
+    padding: 10px;
+
+    font-family: var(--raleway);
+    font-size: 1em;
+    font-weight: 600;
+
+    color: white;
+    background-color: var(--azul-100);
+    border: none;
+
+    margin-bottom: 1em;
+}
+
+.desenvolvedor {
+    text-align: center;
+    padding: 32px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--preto-100);
+
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .barra-pesquisa {
+        display: block;
+    }
+
+    .bg-barra {
+        display: flex;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .link-lupa {
+        display: none;
+    }
+
+    .banner {
+        background-image: url(../img/Herobg-home2.png);
+        height: 352px;
+    }
+
+    .banner-conteudo {
+        margin-bottom: 2.5rem;
+    }
+
+    .banner-titulo h1 {
+        font-size: 3rem;
+    }
+
+    .banner-subtitulo {
+        font-size: 1rem;
+    }
+
+    .produto-cadastrado {
+        width: 23%;
+    }
+
+    .rodape {
+        display: flex;
+        
+        margin-top: 2rem;
+    }
+
+    .menu-rodape {
+        margin-right: 100px;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    form {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .formulario {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 3rem;
+    }
+    .cabecalho {
+        justify-content: flex-start;
+    }
+    
+    .logo {
+        width: 176px;
+        margin-right: 32px;
+    }
+
+    .bg-barra {
+        width: 396px;
+    }
+
+    .login {
+        position:absolute;
+        right: 0;
+        margin-right: 3rem;
+    }
+
+    .banner {
+        background-image: url(banner.png);
+        background-position: center;
+    }
+
+    .banner-link {
+        margin-bottom: 2rem;
+    }
+
+    .produto-cadastrado {
+        width: 16%;
+    }
+
+    .produto-cadastrado2 {
+        display: flex;
+        flex-direction: column;
+        width: 16%;
+    }
+
+    .rodape {
+        justify-content: space-between;
+    }
+
+    .menu-rodape {
+        width: 50%;
+        flex-direction: row;
+
+        padding-right: 0;
+        margin-right: 0;
+
+    }
+
+    .logo-rodape {
+        margin-right: 20%;
+    }
+
+    form {
+        width: 40%;
+        padding-left: 0;
+    }
+
+    
+}
+
+:root {
+    --azul-100: #2A7AE4;
+    --azul-80: #5595E9;
+    --azul-20: #D4E4FA;
+    --branco: white;
+    --preto-100: #464646;
+    --azul-10: #EAF2FD;
+    --preto-50: #A2A2A2;
+
+    --raleway: "raleway", sans-serif;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+    font-size: 14px;
+}
