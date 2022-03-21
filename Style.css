@@ -97,12 +97,9 @@
     margin: 1.3rem 0 1rem;
 }
 
-.lista-produtos {
-    display: flex;
-    flex-wrap: wrap;
 
-    justify-content: space-between;
-}
+
+
 
 .produtos-cabecalho h2 {
     color: var(--preto-100);
@@ -407,4 +404,18 @@ footer {
 body {
     font-family: "raleway", sans-serif;
     font-size: 14px;
+}
+
+.imagem-produto {
+    width: 176px;
+    height: 174px;
+    left: 0px;
+    top: 0px;
+    margin: 8px 0px;
+
+}
+
+.linha-produtos {
+    margin: 18px 10px;
+
 }
